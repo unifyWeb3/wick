@@ -73,6 +73,26 @@ export class GameScene extends Phaser.Scene {
   }
 
   create(): void {
+    // Phaser reuses the scene instance on restart, so every run resets its state here.
+    this.fuel = FUEL_MAX
+    this.score = 0
+    this.combo = 0
+    this.maxCombo = 0
+    this.best = 0
+    this.elapsed = 0
+    this.spawnTimer = 0.7
+    this.spawned = 0
+    this.holdT = 0
+    this.holding = false
+    this.ended = false
+    this.inputLockedUntil = 0
+    this.slowmoUntil = 0
+    this.damageFlash = 0
+    this.recoil = 0
+    this.hintUsed = false
+    this.lastCrackle = -1
+    this.moths = []
+
     this.audio = this.registry.get(AUDIO_KEY) as AudioKit
     this.best = getBest()
     this.audio.startCrackle()
@@ -406,8 +426,8 @@ export class GameScene extends Phaser.Scene {
   }
 
   private flashScreen(): void {
-    const flash = this.add.rectangle(0, 0, GAME_W, GAME_H, 0xfff2d8).setOrigin(0).setDepth(70).setAlpha(0.5)
-    this.tweens.add({ targets: flash, alpha: 0, duration: 170, ease: 'Quad.out', onComplete: () => flash.destroy() })
+    const flash = this.add.rectangle(0, 0, GAME_W, GAME_H, 0xfff2d8).setOrigin(0).setDepth(70).setAlpha(0.34)
+    this.tweens.add({ targets: flash, alpha: 0, duration: 150, ease: 'Quad.out', onComplete: () => flash.destroy() })
   }
 
   private floatText(x: number, y: number, msg: string, color: string, size: number): void {

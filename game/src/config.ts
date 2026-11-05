@@ -69,10 +69,10 @@ export interface Ramp {
 /** Difficulty ramp driven purely by elapsed seconds. */
 export function rampAt(t: number): Ramp {
   return {
-    spawnInterval: Math.max(0.55, 2.2 - t * 0.03),
-    speedMul: 1 + Math.min(t, 90) * 0.008,
-    fastChance: Math.min(0.45, 0.18 + t * 0.004),
-    tankyChance: Math.min(0.3, Math.max(0, (t - 25) / 220)),
+    spawnInterval: Math.max(0.55, 1.8 - t * 0.028),
+    speedMul: 1 + Math.min(t, 90) * 0.009,
+    fastChance: Math.min(0.45, 0.18 + t * 0.005),
+    tankyChance: Math.min(0.3, Math.max(0, (t - 22) / 210)),
   }
 }
 

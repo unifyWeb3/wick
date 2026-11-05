@@ -32,8 +32,8 @@ so low fuel = short reach = forced precision, and no extra content is needed to 
 | **Fast moth** | 11 | 88 px/s | 1 | 12 | Small, quick, sharp weave |
 | **Tanky moth** | 22 | 28 px/s | 2 | 25 | Takes 2 hits, armoured, slow |
 
-**Ramp (endless, driven by elapsed time):** spawn interval `2.2s → 0.55s`, speed `×1 → ×1.7`
-by 60s, tanky chance unlocks at 25s and climbs to 30%, fast chance climbs to 45%.
+**Ramp (endless, driven by elapsed time):** spawn interval `1.8s → 0.55s`, speed `×1 → ×1.8`
+by 90s, tanky chance unlocks at 22s and climbs to 30%, fast chance climbs to 45%.
 
 ## Game feel (mandatory)
 
