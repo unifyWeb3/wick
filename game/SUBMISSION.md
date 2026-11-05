@@ -7,7 +7,7 @@
 | Game | WICK |
 | Playable | <https://wick-oxunify.vercel.app> |
 | Source | <https://github.com/unifyWeb3/wick> |
-| Clip | `clip/wick-clip.mp4` — 15s+ gameplay capture, posted to X tagging `@loadoutprotocol` |
+| Clip | `clip/wick-clip.mp4` — 37s gameplay capture (780×1688, H.264), posted to X tagging `@loadoutprotocol` |
 | Stack | Vite + TypeScript + Phaser 3 · procedural canvas art · WebAudio synthesis · no backend |
 
 ## X post (draft)

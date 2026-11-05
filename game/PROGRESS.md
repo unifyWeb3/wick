@@ -14,7 +14,7 @@ Commit after every step below.
 | 3 | Juice: embers, shake, bloom, slow-mo, danger vignette, combo pop, synth audio | done | `9b82fa3` |
 | 4 | Threats + ramp: slow / fast / tanky (2 HP), time-based spawn ramp | done | `9b82fa3` |
 | 5 | Title + end card, best score, NEW BEST badge | done | `9b82fa3` |
-| 6 | Deploy + README + this log + X clip | in progress | — |
+| 6 | Balance pass, deploy, README, clip, submission pack | done | see log |
 
 ## What was verified (headless Chromium, 390×844)
 
@@ -39,6 +39,13 @@ Commit after every step below.
 
 ## Next
 
-1. Upload the 15s+ gameplay clip to X, tagging `@loadoutprotocol`.
-2. Submit the form with the playable link + clip.
-3. If time survives: daily seed (Step 6 bonus), then stop.
+1. Upload `clip/wick-clip.mp4` (37s, 780×1688) to X, tagging `@loadoutprotocol`.
+2. Submit the form with <https://wick-oxunify.vercel.app> + the post.
+3. Stop. No features after the spec.
+
+## Clip log
+
+| Take | Length | Result |
+|---|---|---|
+| 1 (first balance) | 22.5s | score 280, combo ×6, early game felt sparse |
+| 2 (after balance pass) | 37.1s | score **6448**, longest combo **×34**, full ramp + NEW BEST card |
