@@ -25,3 +25,4 @@ dist-ssr
 
 # local test harness
 .test-*.mjs
+.record-clip.mjs

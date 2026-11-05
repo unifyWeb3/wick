@@ -28,4 +28,5 @@ const config: Phaser.Types.Core.GameConfig = {
 }
 
 const game = new Phaser.Game(config)
-if (import.meta.env.DEV) Object.assign(window, { wick: game })
+// Exposed for debugging and automated playtesting.
+Object.assign(window, { wick: game })
